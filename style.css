@@ -1,0 +1,175 @@
+/* ЗАГАЛЬНІ СТИЛІ */
+body {
+    margin: 0;
+    font-family: Verdana, sans-serif;
+    background-color: #1a1a1a;
+    color: white;
+}
+
+/* --- ШАПКА САЙТУ (HEADER) --- */
+header {
+    background-color: #2e2e2e;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 4px solid #3c8527;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #3c8527;
+    text-shadow: 2px 2px 0px #000;
+}
+
+/* Клас для списку меню замість nav ul */
+.nav-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+}
+
+/* Клас для посилань меню замість nav a */
+.nav-link {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+.nav-link:hover {
+    color: #3c8527;
+}
+
+/* --- HERO БЛОК --- */
+.hero {
+    height: 500px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.1)),
+        url('https://i.postimg.cc/2y4WrXgx/Minecraft-Horizontal-Key-Art.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+
+
+
+/* Клас для заголовка Hero замість .hero h1 */
+.hero-title {
+    font-size: 48px;
+    margin-bottom: 40px;
+    text-shadow: 3px 3px 5px black;
+}
+
+/* Клас для опису Hero замість .hero p */
+.hero-desc {
+    font-size: 20px;
+    margin-bottom: 30px;
+    max-width: 600px;
+}
+
+/* --- КНОПКА --- */
+.btn {
+    background-color: #3c8527;
+    color: white;
+    padding: 15px 30px;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 5px;
+    border: 2px solid white;
+    transition: all 0.3s;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.btn:hover {
+    background-color: #2a611b;
+    cursor: pointer;
+    /* transform прибрано */
+}
+
+/* --- ОСНОВНИЙ КОНТЕНТ --- */
+main {
+    padding: 40px 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 30px;
+    color: #3c8527;
+    text-transform: uppercase;
+}
+
+.cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.card {
+    background-color: #2e2e2e;
+    width: 280px;
+    padding: 20px;
+    border-radius: 10px;
+    border: 2px solid #444;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    transition: 0.3s;
+}
+
+.card:hover {
+    border-color: #3c8527;
+    background-color: #333;
+}
+
+/* Класи для елементів картки замість контекстних селекторів */
+.card-img {
+    height: 180px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.card-title {
+    color: #ffd700;
+    margin-top: 0;
+}
+
+.card-desc {
+    font-size: 14px;
+    line-height: 1.5;
+    color: #ccc;
+}
+
+/* --- ПІДВАЛ --- */
+footer {
+    background-color: #111;
+    padding: 20px;
+    text-align: center;
+    border-top: 4px solid #3c8527;
+    margin-top: 40px;
+}
+
+/* Клас для тексту підвалу замість footer p */
+.footer-text {
+    color: #888;
+    font-size: 14px;
+}
+
+
+
+.container {
+  max-width: 1000px; /* Максимальна ширина - 1000px */
+  margin: 0 auto;     /* Магія! Центрує блок по горизонталі */
+  padding: 40px 20px; /* Не забуваємо про внутрішні відступи */
+}
